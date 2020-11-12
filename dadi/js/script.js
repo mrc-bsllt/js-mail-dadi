@@ -18,16 +18,14 @@ function myFunction() {
   if (randonNumberComputer > randonNumberUser) {
     // cosa succede quando il numero del computer è più alto di quello utente
     messaggio = "Hai Perso!";
-    document.getElementById('result').innerHTML = messaggio;
   } else if (randonNumberComputer < randonNumberUser) {
     // cosa succede quando il numero del computer è più basso di quello utente
     messaggio = "Hai Vinto!";
-    document.getElementById('result').innerHTML = messaggio;
   } else {
     // cosa succede quando il numero del computer è uguale a quello utente
     messaggio = "Pari, ritira il dado!";
-    document.getElementById('result').innerHTML = messaggio;
 
   }
+  document.getElementById('result').innerHTML = messaggio;
 
 }
