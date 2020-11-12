@@ -2,20 +2,26 @@
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo.
 
-// chiedo la mail all'utente
-var personalEmail = prompt("Scrivi la tua Email");
 
 // creo una lista di email valide
 var emailList = ["marco.busellato@libero.it", "giuseppe.busellato@libero.it", "pietro.busellato@libero.it", "matteo.busellato@libero.it", "mattia.busellato@libero.it", "piero.busellato@libero.it", "stefano.busellato@libero.it", "simone.busellato@libero.it", "alessandro.busellato@libero.it", "mario.busellato@libero.it",];
 
-// for per la ripetizione delle operazioni
+// chiedo la mail all'utente
+var personalEmail = prompt("Scrivi la tua Email");
+
+var result = false;
+
+// controllo se nella lista della email c'è una corrispondenza
 for (var i = 0; i < emailList.length; i++) {
-  // controllo se l'email inserita dall'utente è presente tra quelle della lista
-  var emailCheked = personalEmail.includes(emailList[i]);
-    if (emailCheked = true) {
-      document.getElementById('result').innerHTML = "OK";
-    } else {
-      document.getElementById('result').innerHTML = "no";
-    }
+
+  if (personalEmail == emailList[i]) {
+    result = true;
   }
-  // se un valore viene restituito come true, allora può accedere e scrivi "ok"
+
+}
+
+if ( result === true) {
+  document.getElementById("result").innerHTML = "ACCESSO CONSENTITO";
+} else {
+  document.getElementById("result").innerHTML = "ACCESSO NEGATO";
+}
