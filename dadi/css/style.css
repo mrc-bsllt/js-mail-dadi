@@ -5,11 +5,12 @@
 }
 body {
   background-color: #282222;
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
 }
 
 #block {
-  height: 100vh;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,4 +36,25 @@ body {
 }
 .btn:focus {
   outline: none;
+}
+
+#text {
+  padding: 0 30px;
+}
+#text > p {
+  margin: 15px 0;
+}
+#pc-number,
+#user-number {
+  margin-left: 5px;
+  font-size: 25px;
+}
+
+#result {
+  width: 80%;
+  padding: 20px 0;
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
 }
