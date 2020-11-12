@@ -12,5 +12,10 @@ var emailList = ["marco.busellato@libero.it", "giuseppe.busellato@libero.it", "p
 for (var i = 0; i < emailList.length; i++) {
   // controllo se l'email inserita dall'utente è presente tra quelle della lista
   var emailCheked = personalEmail.includes(emailList[i]);
-  console.log(emailCheked);
-}
+    if (emailCheked = true) {
+      document.getElementById('result').innerHTML = "OK";
+    } else {
+      document.getElementById('result').innerHTML = "no";
+    }
+  }
+  // se un valore viene restituito come true, allora può accedere e scrivi "ok"
