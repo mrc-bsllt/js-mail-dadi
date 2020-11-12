@@ -3,3 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #282222;
+  font-family: 'Roboto', sans-serif;
+}
+
+#block {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/dado.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.btn {
+  width: 150px;
+  height: 80px;
+  margin: 10px 0;
+  background-color: #745410;
+  box-shadow: 4px 4px 4px #000000;
+  border-color: #000000;
+  cursor: pointer;
+  color: #ffffff;
+}
+.btn:focus {
+  outline: none;
+}
